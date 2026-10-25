@@ -91,6 +91,10 @@ else if (section === "projects") {
            href="details.html?section=project-currency converter">
            Currency Converter Website ↗
         </a>
+        <a class="project-name"
+           href="details.html?section=project-smarthire">
+           Smart Hire Website ↗
+        </a>
         <p>Click the project name to view its details.</p>
     `;
 }
@@ -202,6 +206,38 @@ else if (section === "project-currency converter") {
                target="_blank"
                rel="noopener noreferrer">
                Open Website →
+            </a>
+        </div>
+
+        <a class="action-btn"
+           href="details.html?section=projects">
+           ← Back to Projects
+        </a>
+    `;
+}
+else if (section === "project-smarthire") {
+    content.innerHTML = `
+        <h1>Smart Hire Website</h1>
+
+        <div class="card">
+            <h2>Project Overview</h2>
+            <p>SmartHire is a Python Flask web application that compares resumes with job descriptions,
+            identifies matching and missing skills, calculates a match score, and suggests improvements
+            to help job seekers improve their resumes.</p>
+
+            <h2>Technologies</h2>
+            <p>python, flask, html, css, sqlite, web-scraping, resume-analyzer, render</p>
+
+            <h2>Features</h2>
+            <p>SmartHire compares resumes with job descriptions, identifies matching and missing skills, and calculates a match score.
+           It also suggests resume improvements and stores previous analyses using SQLite.</p>
+
+            <h2>Link to open</h2>
+            <a class="project-link"
+               href="smart-hire-9ndw.onrender.com"
+               target="_blank"
+               rel="noopener noreferrer">
+               Visit Website →
             </a>
         </div>
 
