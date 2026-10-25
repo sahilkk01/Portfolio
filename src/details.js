@@ -234,7 +234,7 @@ else if (section === "project-smarthire") {
 
             <h2>Link to open</h2>
             <a class="project-link"
-               href="smart-hire-9ndw.onrender.com"
+               href="https://smart-hire-9ndw.onrender.com"
                target="_blank"
                rel="noopener noreferrer">
                Visit Website →
