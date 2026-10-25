@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Singh | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(20, 20, 58);
+            color: whitesmoke;
+            font-family: Arial, sans-serif;
+            padding: 110px 5% 20px;
+        }
+
+        /* Navbar */
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            background-color: rgb(19, 19, 50);
+            padding: 15px 25px;
+            border-radius: 10px;
+            position: fixed;
+            top: 20px;
+            left: 5%;
+            width: 90%;
+            z-index: 1000;
+        }
+
+        nav h3 {
+            color: #d946ef;
+            font-size: 22px;
+        }
+
+        .items {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .items span {
+            cursor: pointer;
+        }
+
+        .items span:hover {
+            color: #d946ef;
+        }
+
+        /* Hero section */
+        article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 30px;
+            min-height: 420px;
+            padding: 40px 20px;
+            border-bottom: 1px solid blueviolet;
+        }
+
+        .intro h1 {
+            font-size: clamp(30px, 4vw, 48px);
+            margin-bottom: 15px;
+        }
+
+        .intro h2 {
+            color: #d946ef;
+            font-size: clamp(20px, 2.5vw, 30px);
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            color: #c7c7d8;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            max-width: 450px;
+        }
+
+        /* Resume button */
+        .resume {
+            display: inline-block;
+            background: linear-gradient(90deg, #8b00ff, #ed4899);
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #8b00ff66;
+        }
+
+        .resume:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Profile image */
+        .photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 3px solid #d946ef;
+            box-shadow: 0 0 25px #a020f0;
+        }
+
+        /* Bottom links */
+        .bottom {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .bottom a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: rgb(30, 30, 75);
+        }
+
+        .bottom a:hover {
+            color: #e879f9;
+            background-color: rgb(42, 32, 80);
+        }
+                .items a {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .items a:hover {
+            color: #d946ef;
+}
+
+        /* Mobile layout */
+        @media (max-width: 700px) {
+            nav {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .items {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            article {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+                padding: 35px 10px;
+            }
+
+            .intro p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .photo {
+                grid-row: 1;
+            }
+
+            .photo img {
+                width: 220px;
+                height: 220px;
+            }
+
+            .bottom {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <h3>Sahil Singh</h3>
+        </div>
+
+        <div class="items">
+        <a href="index.html">HOME</a>
+        <a href="./public/details.html?section=about">ABOUT</a>
+        <a href="./public/details.html?section=certificates">CERTIFICATES</a>
+        <a href="./public/details.html?section=skills">SKILLS</a>
+        <a href="./public/details.html?section=projects">PROJECTS</a>
+        <a href="./public/details.html?section=contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <article>
+        <div class="intro">
+            <h1>Hi, I'm Sahil Singh</h1>
+            <h2>Full Stack Developer</h2>
+
+            <p>
+                I enjoy creating modern, responsive and
+                user-friendly websites while learning new technologies.
+            </p>
+
+            <a class="resume" href="./public/image/My resume.pdf" download>
+                Download Resume ↓
+            </a>
+        </div>
+
+        <div class="photo">
+            <img src="./public/image/my photo.jpeg"
+                 alt="Sahil Singh profile photo">
+        </div>
+    </article>
+
+    <!-- Bottom links -->
+    <div class="bottom">
+        <a href="./public/details.html?section=address">
+            📍 Address
+        </a>
+
+        <a href="./public/details.html?section=education">
+            🎓 Education
+        </a>
+
+        <a href="https://github.com/sahilkk01"
+           target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+        </a>
+
+        <a href="https://www.linkedin.com/in/sahil-singh-ara"
+           target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+        </a>
+    </div>
+
+</body>
+</html>
