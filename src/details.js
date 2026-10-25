@@ -139,7 +139,7 @@ else if (section === "project-portfolio") {
 
             <h2>Link to open</h2>
             <a class="project-link"
-               href="YOUR_PORTFOLIO_URL"
+               href="https://sahilkk01.github.io/Portfolio/"
                target="_blank"
                rel="noopener noreferrer">
                Visit Portfolio →
