@@ -95,6 +95,10 @@ else if (section === "projects") {
            href="details.html?section=project-smarthire">
            Smart Hire Website ↗
         </a>
+        <a class="project-name"
+           href="details.html?section=NOVA">
+           NOVA (A Virtual Assistant) Website ↗
+        </a>
         <p>Click the project name to view its details.</p>
     `;
 }
@@ -238,6 +242,38 @@ else if (section === "project-smarthire") {
                target="_blank"
                rel="noopener noreferrer">
                Visit Website →
+            </a>
+        </div>
+
+        <a class="action-btn"
+           href="details.html?section=projects">
+           ← Back to Projects
+        </a>
+    `;
+}
+
+    else if (section === "NOVA") {
+    content.innerHTML = `
+        <h1>NOVA (A Virtual Assistant) Website</h1>
+
+        <div class="card">
+            <h2>Project Overview</h2>
+            <p>NOVA – AI Voice Assistant: Developed a Flask-based AI voice assistant that allows users to interact through voice or text and receive intelligent responses in both text and speech.
+            Supports continuous voice interaction, speech-to-text, text-to-speech, and conversation history for a hands-free, user-friendly experience.</p>
+
+            <h2>Technologies</h2>
+            <p>Python , Flask , HTML , CSS , JavaScript , Groq API , SpeechRecognition , PyAudio,| Web Speech API</p>
+
+            <h2>Features</h2>
+            <p>AI-Powered Multilingual Voice Interaction: Enables voice and text-based conversations with intelligent AI responses, speech-to-text processing, and natural-sounding spoken replies.
+                  Real-Time Hands-Free Assistance: Supports continuous listening, voice interruption, interactive Start/Stop controls, and conversation history for a seamless assistant experience.</p>
+
+            <h2>Link to open</h2>
+            <a class="project-link"
+               href="https://nova-1-p3rj.onrender.com"
+               target="_blank"
+               rel="noopener noreferrer">
+               Visit NOVA →
             </a>
         </div>
 
