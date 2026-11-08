@@ -37,19 +37,19 @@ else if (section === "education") {
         <div class="card">
             <h2>B.Tech - CSE</h2>
             <p>Centurion University of Technology and Management, Odisha</p>
-            <p>2022–2026 | CGPA: 8.1</p>
+            <p>2022–2026</p>
         </div>
 
         <div class="card">
             <h2>Class XII</h2>
             <p>Jan Sahakari College, Barap, Bihar</p>
-            <p>2020–2022 | 70.2%</p>
+            <p>2022</p>
         </div>
 
         <div class="card">
             <h2>Class X</h2>
             <p>Mother Teresa Public School, Dularpur, Bihar</p>
-            <p>2019 | 62.8%</p>
+            <p>2019</p>
         </div>
     `;
 }
